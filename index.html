@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: #cfe0e8;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #87bdd8;
+    padding: 16px 80px;
+}
+nav h1{
+    color: rgb(206, 49, 44);
+    font-size: 35px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 0px 15px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: #e06377;
+    font-size: 20px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    background: #b7d7e8;
+    width: 320px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.card-image {
+    height: 180px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+.onecard{
+    background-image: url(./newpics/news1.jpeg);
+}
+.twocard{
+    background-image: url(./newpics/news2.jpg);
+}
+.threecard{
+    background-image: url(./newpics/news3.jpg);
+}
+.fourcard{
+    background-image: url(./newpics/news4.jpg);
+}
+.fivecard{
+    background-image: url(./newpics/news5.jpg);
+}
+.sixcard{
+    background-image: url(./newpics/news6.png);
+}
+.sevencard{
+    background-image: url(./newpics/news7.png);
+}
+.eightcard{
+    background-image: url(./newpics/news8.png);
+}
+.card p{
+    padding: 10px;
+}
+.card a{
+    background-color: #667292;
+    color: black;
+    padding: 15px 18px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+.card:hover {
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+.card h2{
+    text-align: center;
+}
+.card a:hover {
+    background-color: rgb(35, 168, 35);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+  </style>
+</head>
+<body>
+  <nav>
+    <img src="picture1.png" width="200px">
+    <ul>
+      <li><a href="#" class="add" onclick="showEmail()">Для рекламных предложений</a></li>
+      <li><a href="pro/Unti1.html">Наш магазин</a></li>
+    <!--  <li><a href="shet.html">Картинка с котиком</a></li> / идея не вошла в финал
+    --> 
+      <li><a href="shet2.html">Секретная игрушка</a></li>
+      <li><a href="#" class="saya" onclick="opros()">Опросник</a></li>
+    </ul>
+  </nav>
+<selection class="container">
+  <div class="card">
+    <div class="card-image onecard"></div>
+    <h2>Путешествие во времени: экскурсия</h2>
+    <p>
+      В метро произошло необычное событие, привлекшее внимание жителей и гостей столицы.
+       Местные организаторы в сотрудничестве с метрополитеном организовали специальные экскурсии в метро, чтобы познакомить посетителей с богатой историей этой знаменитой улицы.
+    </p>
+    <a href="">Подробнее</a>
+  </div>
+  <div class="card">
+    <div class="card-image twocard"></div>
+    <h2>Веселье среди деревьев</h2>
+    <p>
+      Лес в Косино стал уникальным местом для веселых и незабываемых приключений.
+      Жители города с удовольствием присоединились к лесным гулянкам, чтобы насладиться природой и веселыми развлечениями.
+       Вход в лес был преображен: установлены яркие вывески и украшения, указывающие на тропу, ведущую в глубь дремучих зеленых деревьев.
+    </p>
+    <a href="">Подробнее</a>
+  </div>
+  <div class="card">
+    <div class="card-image threecard"></div>
+    <h2>Озеро  оживает пляжной вечеринкой</h2>
+    <p>
+      Лето в полном разгаре, и озеро Косино становится главным местом для отдыха и развлечений в этом городе. Вчера произошло замечательное событие, 
+      местные организаторы организовали грандиозную пляжную вечеринку, которая собрала множество жителей и гостей.
+    </p>
+    <a href="">Подробнее</a>
+  </div>
+  <div class="card">
+    <div class="card-image fourcard"></div>
+    <h2>Шоу Света в ТЦ</h2>
+    <p>
+      ТЦ Косино Парк превратился в удивительное место магии и волшебства, благодаря захватывающему Шоу Света. 
+      Посетители были поражены красотой и техническим совершенством представления, которое заполнило их сердца радостью и удивлением.
+    </p>
+    <a href="https://www.kosinopark.ru/">Подробнее</a>
+  </div>
+</selection>
+<selection class="container">
+  <div class="card">
+    <div class="card-image sixcard"></div>
+    <h2>Удивительное творчество в Парке Косино!</h2>
+    <p>
+      В уютном Парке Косино прошло захватывающее мероприятие, которое оживило воображение посетителей и стало настоящим творческим праздником. 
+      Местные художники и дети собрались вместе, чтобы провести занятие по рисованию под открытым небом.
+    </p>
+    <a href="">Подробнее</a>
+  </div>
+  <div class="card">
+    <div class="card-image fivecard"></div>
+    <h2>Мустафар: Горячие Приключения ждут вас!</h2>
+    <p>
+      Готовы ли вы отправиться в самый жаркий уголок галактики? Приготовьтесь к незабываемому приключению на Мустафаре - планете, где горит пламя страсти и опасности! 
+      Присоединяйтесь к нашему горячему туру и окунитесь в мир, который заставит ваши сердца расплавиться!
+    </p>
+    <a href="">купить</a>
+  </div>
+  <div class="card">
+    <div class="card-image sevencard"></div>
+    <h2>Новая деревня "Эмералдхейвен"</h2>
+    <p>
+      Эмералдхейвен - это идеальное место для тех, кто ищет спокойствия, приключений и незабываемых впечатлений. Наша деревня 
+      раскинулась в самом сердце волшебного мира, где сливаются эпические легенды и живая природа.
+    </p>
+    <a href="">Купить</a>
+  </div>
+  <div class="card">
+    <div class="card-image eightcard"></div>
+    <h2>Открылся новый фитнес клуб "MuscleMania"</h2>
+    <p>
+      Устали от обычных фитнес-студий? Тогда готовься к новому уровню тренировок, где страсть к силе и эстетике встречаются в стиле MuscleMania. 
+      Мы создали клуб специально для тех, кто стремится к рельефным мышцам, невероятной силе и прекрасной физической форме.
+    </p>
+    <a href="">Купить</a>
+  </div>
+</selection>
+<script>
+  function showEmail() {
+    alert('Почта для рекламы: reklamkatop@gymail.com');
+  }
+  function opros() {
+    var questions = [
+      "Ваше имя?",
+      "Ваш возраст?",
+      "Ваше место жительства?",
+      "Ваше любимое хобби?",
+      "Для чего вы используете данный сайт"
+    ];
+    var currentQuestion = 0;
+    var answers = [];
+    function askQuestion() {
+      var question = questions[currentQuestion];
+      var answer = prompt(question);
+      answers.push(answer);
+      currentQuestion++;
+
+      if (currentQuestion < questions.length) {
+        askQuestion();
+      } else {
+        showThankYou();
+      }
+    }
+    function showThankYou() {
+      var message = "Спасибо за внимание. Ваши ответы:\n\n";
+      for (var i = 0; i < questions.length; i++) {
+        message += questions[i] + ": " + answers[i] + "\n";
+      }
+      alert(message);
+    }
+    askQuestion();
+  }
+</script>
+</body>
+</html>
+
+
+
+
