@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ec6171948e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Страница</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="logo-text"><span>Свежие</span>Новости</h1>
+        </div>
+        <i class="fa fa-bars menu-toggle"></i>
+        <ul class="nav">
+            <li><a href="index.html">Главное</a></li>
+            <li><a href="#">АИС</a></li>
+            <li><a href="#">Контакты</a></li>
+
+            
+           <!-- <li><a href="#">Sign up</a></li>
+            <li><a href="#">Login</a></li>--> 
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-user style=" style="font-size: .8em"></i>
+                    Пользователь
+                    <i class="fa fa-chevron-down" style="font-size: .8em"></i>
+                </a>
+                <ul>
+                    <li><a href="#">Хорошего</a></li>
+                    <li><a href="#" class="logout">Чтения</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <div class="page-wrapper">
+
+<div class="content clearfix">
+
+<div class="main-content single">
+   <h1 class="post-title">Уникальность</h1>
+   <div class="post-content">
+    <p>
+        Природно-исторический парк (ПИП) «Косинский» занимает огромную территорию с большим количеством самых разнообразных природных достопримечательностей:
+         это и знаменитое Косинское Трехозерье, и ручей Банная канава, и река Рудневки со своими окрестностями, и живописные леса и поля. 
+        Парк является одной из важнейших зеленых территорий Москвы, а три его озера — Белое, Черное и Святое — уникальны тем, что имеют редкое природное происхождение.
+    </P>
+    <br>
+    <p>
+        В пределах парка расположено древнее село Косино, ведущее свою историю с 1410 года, и комплекс православных церквей — Успенский, Никольский и Тихоновский храм, — каждый из которых рассказывает свою собственную уникальную историю.
+
+        Флора и фауна природно-исторического парка «Косинский» также заслуживает отдельного внимания. Здесь произрастает множество необычных растений и водится большое количество редких птиц и животных, в том числе, за участках болот обитают дикие утки: кряквы, нырки, гоголи и многие другие.
+        
+        Парк «Косинский» открыт для посещения в течение всего года, круглосуточно. Вся его территория полностью свободна для посетителей, ограждений и заборов здесь нет. Вход в парк свободный.
+    </p>
+    <img src="images/10.jpg" class="omega">
+ <br><p>
+<h1 class="post-title">Пляж</h1>
+
+В Косинском парке оборудованы не только все необходимые зоны отдыха и условия для рыбалки, но и обустроены отличные песчаные пляжи для летнего отдыха посетителей. 
+На одном из пляжей работает лодочная станция. На берегах местных озер произрастают внушительные тополи, ракиты и дубы, размер ствола которых в диаметре достигает 1 метра и более.
+
+
+   
+ </p>
+ <br>
+ <p>
+    Посетителей на пляжах Косинского парка всегда много, вода в озерах достаточно хорошо прогревается. На водной территории постоянно курсирует катер спасателей, поэтому за безопасность здесь можно не опасаться. 
+    На пляже натянута сетка для игры в пляжный волейбол, а неподалеку от нее — детская игровая площадка. Для детей здесь построен специальный мостик из дерева, паутина, песочница.
+</p><br>
+
+     <img src="images/100.jpg" class="omega">
+   <p> Ждем вас весной и летом и осенью и зимой</p>
+    <style>
+        /* Стили для кнопок */
+        button {
+          padding: 10px 20px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          margin-right: 10px;
+        }
+    
+        button:hover {
+          background-color: #45a049;
+        }
+    
+        /* Стили для ползунка */
+        input[type=range] {
+          width: 100%;
+          height: 15px;
+          background: #d3d3d3;
+          border-radius: 5px;
+          outline: none;
+          margin-top: 10px;
+        }
+    
+        input[type=range]::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 25px;
+          height: 25px;
+          background: #4CAF50;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+    
+        input[type=range]::-webkit-slider-thumb:hover {
+          background: #45a049;
+        }
+      </style>
+    </head>
+    <body>
+      <audio id="audioPlayer" src="sound/tts5.mp3"></audio>
+      <button onclick="playSound()">Воспроизвести звук</button>
+      <button onclick="pauseSound()">Пауза</button>
+      <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1" onchange="changeVolume(this.value)">
+      
+      <script>
+        var audio = document.getElementById("audioPlayer");
+        
+        function playSound() {
+          audio.play();
+        }
+    
+        function pauseSound() {
+          audio.pause();
+        }
+    
+        function changeVolume(volume) {
+          audio.volume = volume;
+        }
+      </script>
+    
+    
+</div>
+</div>
+
+<!-- <div class="sidebar single">
+
+    <div class="section popular">
+        <h2 class="section-title">Рекомендуем</h2>
+
+        <div class="post clearfix">
+            <img src="images/a1.jpeg" alt="">
+            <a href="" class="title"><h4>АААААА</h4</a>
+        </div>
+        <div class="post clearfix">
+            <img src="images/a1.jpeg" alt="">
+            <a href="" class="title">АААААА</a>
+        </div>
+        <div class="post clearfix">
+            <img src="images/a1.jpeg" alt="">
+            <a href="" class="title">АААААА</a>
+        </div>
+        <div class="post clearfix">
+            <img src="images/a1.jpeg" alt="">
+            <a href="" class="title">АААААА</a>
+        </div>
+        
+
+    </div>
+    <div class="section topics">
+        <h2 class="section-title">Разделы</h2>
+        <ul>
+            <li><a href="#">Косино</a></li>
+            <li><a href="#">quotes</a></li>
+            <li><a href="#">fiction</a></li>
+            <li><a href="#">biography</a></li>
+            <li><a href="#">motviaer</a></li>
+            <li><a href="#">ngonongt</a></li>
+            <li><a href="#">grergger</a></li>
+        </ul>
+   </div> --> 
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+    <div class="footer-content">
+
+    <div class="footer-section about">
+        <h1 class="logo-text"><span>Новости</span>Ого</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aliquid ratione odio odit reprehenderit soluta itaque excepturi eos ab aliquam quis, esse, quo laborum quam explicabo eius, illo sunt animi?
+        </p>
+        <div class="contact">
+            <span><i class="fas fa-phone"></i>&nbsp; 123-456-901</span>
+           <span><i class="fas fa-envelope"></i>&nbsp;1234@mail.ru</span>
+        </div>
+    </div>
+
+    <div class="footer-section links">
+
+    </div>
+
+
+    <div class="footer-section contact-form">
+        <h2>Напишите нам</h2>
+        <br>
+        <form action="index.html" method="post">
+            <input type="email" name="email" class="text-input contact-input" placeholder="Ваш email">
+            <textarea rows="4" name="message" class="text-input contact-input" placeholder="Ваше сообщение.."></textarea>
+            <button type="submit" class="btn btn-big contact-btn">
+               <i class="fas fa-envelope"> </i> Отправить
+            </button>
+        </form>
+    </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        Данный сайт является новостным порталом 
+    </div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
