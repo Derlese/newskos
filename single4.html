@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ec6171948e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Страница</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="logo-text"><span>Свежие</span>Новости</h1>
+        </div>
+        <i class="fa fa-bars menu-toggle"></i>
+        <ul class="nav">
+            <li><a href="index.html">Главное</a></li>
+            <li><a href="http://supgas1i.beget.tech/contact-us/">Контакты</a></li>
+
+            
+
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-user style=" style="font-size: .8em"></i>
+                    Пользователь
+                    <i class="fa fa-chevron-down" style="font-size: .8em"></i>
+                </a>
+                <ul>
+            <li><a href="#">Хорошего</a></li>
+            <li><a href="#" class="logout">Чтения</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <div class="page-wrapper">
+
+<div class="content clearfix">
+
+<div class="main-content single">
+   <h1 class="post-title">Предложение месяца</h1>
+   <div class="post-content">
+    <p>
+        Шкаф напольный Дейма темная 60x85x60 см ЛДСП цвет темный
+    </P>
+    <img src="images/temt.webp" class="omega">
+    <br>
+    <p>
+        Шкаф Дейма предназначен для напольной установки. Используется не только для хранения кухонной утвари, но и в качестве рабочего стола для приготовления еды. 
+        Оснащен перемещаемой полкой, которая разграничивает внутреннее пространство ящика. Современный внешний вид позволит изделию органично смотреться в интерьере любого помещения. 
+        Изготовлен из качественного ЛДСП, который обеспечивает высокую прочность и износостойкость. В комплекте с ящиком также поставляются ножки, фурнитура и ручки
+    </p>
+
+ <br>
+ <img src="images/2_tmp.webp" class="omega">
+ <p>
+    Штора на ленте Calenssie Laguna1 200x280 см цвет темно-бирюзовый.
+ </p>
+ <br>
+ <p>
+    Безопасный текстиль. Этот товар имеет добровольный экологический сертификат, который гарантирует, что в составе изделия нет вредных для здоровья человека веществ.
+</p><br>
+<h1 class="post-title">Промокод вы можете получить при прослушивании текста</h1>
+
+
+    <style>
+        /* Стили для кнопок */
+        button {
+          padding: 10px 20px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          margin-right: 10px;
+        }
+    
+        button:hover {
+          background-color: #45a049;
+        }
+    
+        /* Стили для ползунка */
+        input[type=range] {
+          width: 100%;
+          height: 15px;
+          background: #d3d3d3;
+          border-radius: 5px;
+          outline: none;
+          margin-top: 10px;
+        }
+    
+        input[type=range]::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 25px;
+          height: 25px;
+          background: #4CAF50;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+    
+        input[type=range]::-webkit-slider-thumb:hover {
+          background: #45a049;
+        }
+      </style>
+    </head>
+    <body>
+      <audio id="audioPlayer" src="sound/tts6.mp3"></audio>
+      <button onclick="playSound()">Воспроизвести звук</button>
+      <button onclick="pauseSound()">Пауза</button>
+      <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1" onchange="changeVolume(this.value)">
+      
+      <script>
+        var audio = document.getElementById("audioPlayer");
+        
+        function playSound() {
+          audio.play();
+        }
+    
+        function pauseSound() {
+          audio.pause();
+        }
+    
+        function changeVolume(volume) {
+          audio.volume = volume;
+        }
+      </script>
+    
+    
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+    <div class="footer-content">
+
+    <div class="footer-section about">
+        <h1 class="logo-text"><span>Новости</span>Ого</h1>
+        <p>
+            Приветствуем, охотники за свежими новостями! Держите руку на пульсе событий и готовьтесь к вихрю информации! 🚀📰 
+        </p>
+        <div class="contact">
+            <span><i class="fas fa-phone"></i>&nbsp; 123-456-901</span>
+           <span><i class="fas fa-envelope"></i>&nbsp;1234@mail.ru</span>
+        </div>
+    </div>
+
+    <div class="footer-section links">
+ 
+    </div>
+
+
+
+
+    </div>
+
+    <div class="footer-bottom">
+        Данный сайт является новостным порталом 
+    </div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
